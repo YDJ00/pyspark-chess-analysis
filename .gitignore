@@ -1,0 +1,25 @@
+cat > .gitignore <<'EOF'
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+spark_env/
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore large data outputs
+data/
+output/
+processed/
+player_analysis_results/
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF
+*.py
