@@ -20,7 +20,7 @@ Analyze large-scale chess games using **PySpark**. This project processes PGN da
 
 ### Square Where King Delivers Checkmates
 
-![Square Where King Delivers Checkmates](images/square_where_king_delivers_checkmates.png)
+![Square Where King Delivers Checkmates](images/sqaure_where_king_delivers_checkmates.png)
 
 ### Histogram of Checkmates by Piece
 
