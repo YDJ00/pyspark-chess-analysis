@@ -1,206 +1,120 @@
-\# PySpark Chess Analysis
+# PySpark Chess Analysis
 
-
-
-Analyze large-scale chess games using \*\*PySpark\*\*. This project processes PGN datasets, extracts useful insights, and generates meaningful visualizations.
-
-
+Analyze large-scale chess games using **PySpark**. This project processes PGN datasets, extracts useful insights, and generates meaningful visualizations.
 
 ---
 
+## 📊 Visualizations
 
+### Overall Heatmap of Checkmating Squares
 
-\## 📊 Visualizations
+![Overall Heatmap of Checkmating Squares](images/Overall_Heatmap_of_Checkmating_Squares.png)
 
+### Scatter Plot: Bullet vs Classical
 
+![Scatter Plot Bullet vs Classical](images/scatter_plot_bullet_vs_classical.png)
 
-\### Overall Heatmap of Checkmating Squares
+### Opening Success Rate
 
+![Opening Success Rate](images/opening_success_rate.png)
 
+### Square Where King Delivers Checkmates
 
-!\[Overall Heatmap of Checkmating Squares](images/Overall\_Heatmap\_of\_Checkmating\_Squares.png)
+![Square Where King Delivers Checkmates](images/sqaure_where_king_delivers_checkmates.png)
 
+### Histogram of Checkmates by Piece
 
+![Histogram of Checkmates by Piece](images/histogram_of_checkmates_by_piece.png)
 
-\### Scatter Plot: Bullet vs Classical
+### Distribution of Ratings
 
-
-
-!\[Scatter Plot Bullet vs Classical](images/scatter\_plot\_bullet\_vs\_classical.png)
-
-
-
-\### Opening Success Rate
-
-
-
-!\[Opening Success Rate](images/opening\_success\_rate.png)
-
-
-
-\### Square Where King Delivers Checkmates
-
-
-
-!\[Square Where King Delivers Checkmates](images/square\_where\_king\_delivers\_checkmates.png)
-
-
-
-\### Histogram of Checkmates by Piece
-
-
-
-!\[Histogram of Checkmates by Piece](images/histogram\_of\_checkmates\_by\_piece.png)
-
-
-
-\### Distribution of Ratings
-
-
-
-!\[Distribution of Ratings](images/distribution\_of\_ratings.png)
-
-
+![Distribution of Ratings](images/distribution_of_ratings.png)
 
 ---
 
-
-
-\## 📁 Project Structure
-
-
+## 📁 Project Structure
 
 ```
-
-chess\_project/
-
+chess_project/
 ├── images/
-
-│   ├── Overall\_Heatmap\_of\_Checkmating\_Squares.png
-
-│   ├── scatter\_plot\_bullet\_vs\_classical.png
-
-│   ├── opening\_success\_rate.png
-
-│   ├── square\_where\_king\_delivers\_checkmates.png
-
-│   ├── histogram\_of\_checkmates\_by\_piece.png
-
-│   └── distribution\_of\_ratings.png
-
+│   ├── Overall_Heatmap_of_Checkmating_Squares.png
+│   ├── scatter_plot_bullet_vs_classical.png
+│   ├── opening_success_rate.png
+│   ├── square_where_king_delivers_checkmates.png
+│   ├── histogram_of_checkmates_by_piece.png
+│   └── distribution_of_ratings.png
 ├── data/
-
 ├── processed/
-
-├── 1\_download.ipynb
-
-├── 2\_decompress.ipynb
-
-├── 3\_process\_parititon.ipynb
-
-├── 4\_moves\_partition.ipynb
-
-├── 5\_visualizations.ipynb
-
+├── 1_download.ipynb
+├── 2_decompress.ipynb
+├── 3_process_parititon.ipynb
+├── 4_moves_partition.ipynb
+├── 5_visualizations.ipynb
 ├── requirements.txt
-
 └── README.md
-
 ```
 
+---
 
+## 🛠 Tech Stack
+
+* **Python 3.x**
+* **PySpark**
+* **Pandas, NumPy**
+* **Plotly, Matplotlib, Seaborn**
+* **Rich, Psutil, Zstandard**
 
 ---
 
+## 🚀 Setup & Usage
 
-
-\## 🛠 Tech Stack
-
-
-
-\* \*\*Python 3.x\*\*
-
-\* \*\*PySpark\*\*
-
-\* \*\*Pandas, NumPy\*\*
-
-\* \*\*Plotly, Matplotlib, Seaborn\*\*
-
-\* \*\*Rich, Psutil, Zstandard\*\*
-
-
-
----
-
-
-
-\## 🚀 Setup \& Usage
-
-
+### Linux / macOS (recommended)
 
 ```bash
-
-\# Clone the repo
-
+# Clone the repo
 git clone git@github.com:YDJ00/pyspark-chess-analysis.git
-
 cd pyspark-chess-analysis
 
-
-
-\# Create and activate venv
-
+# Create and activate venv
 python3 -m venv .venv
-
 source .venv/bin/activate
 
-
-
-\# Install dependencies
-
+# Install dependencies
 pip install -r requirements.txt
 
-
-
-\# Ensure Java \& Spark are installed
-
+# Ensure Java & Spark are installed
 java -version
-
 spark-submit --version
-
 ```
 
+### Windows Users (via WSL + Ubuntu)
 
+This project works best in Linux. On Windows, follow these steps:
+
+1. Install **Windows Subsystem for Linux (WSL)** from the Microsoft Store.
+2. Install **Ubuntu 22.04** inside WSL.
+3. Open Ubuntu terminal and follow the Linux setup steps above.
+4. Verify installation:
+
+   ```bash
+   java -version
+   spark-submit --version
+   ```
+
+### Running the project
 
 Run the notebooks in order:
 
-
-
-1\. `1\_download.ipynb`
-
-2\. `2\_decompress.ipynb`
-
-3\. `3\_process\_parititon.ipynb`
-
-4\. `4\_moves\_partition.ipynb`
-
-5\. `5\_visualizations.ipynb`
-
-
+1. `1_download.ipynb`
+2. `2_decompress.ipynb`
+3. `3_process_parititon.ipynb`
+4. `4_moves_partition.ipynb`
+5. `5_visualizations.ipynb`
 
 ---
 
+## 📬 Contact
 
-
-\## 📬 Contact
-
-
-
-\*\*Author:\*\* Yash Jadhav
-
-\*\*GitHub:\*\* \[YDJ00](https://github.com/YDJ00)
-
-\*\*Email:\*\* \[yash918jadhav@gmail.com](mailto:yash918jadhav@gmail.com)
-
-
-
+**Author:** Yash Jadhav
+**GitHub:** [YDJ00](https://github.com/YDJ00)
+**Email:** [yash918jadhav@gmail.com](mailto:yash918jadhav@gmail.com)
